@@ -37,3 +37,14 @@ const inputTracker = (() => {
 
 inputTracker.trackInput();
 inputTracker.trackTextArea();
+
+const app = Vue.createApp({
+  template: `
+    <p>{{message}}</p>
+   `,
+  data() {
+    return {
+      message: "Hey I'm Dang",
+    };
+  },
+}).mount("#app");
