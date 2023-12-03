@@ -1,3 +1,5 @@
+import "/components/custom-element.js";
+
 const inputTracker = (() => {
   let form = null;
   let dataStorage = null;
@@ -8,7 +10,8 @@ const inputTracker = (() => {
       return;
     }
 
-    formName = form.getAttribute("name");
+    const formName = form.getAttribute("name");
+
     fn(formName);
   }
 
