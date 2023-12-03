@@ -1,0 +1,7 @@
+### Vue template
+*.xml
+*.iml
+
+.idea
+
+node_modules
